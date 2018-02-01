@@ -1,19 +1,20 @@
 #
-# Generate a sample CSDMS reference list.
+# Generate sample CSDMS reference lists using different bibliography
+# packages ans styles.
 #
 
-name = example
+standard = example-standard
 biblio = references
 targets = aux bbl blg dvi log ps pdf
 
-$(name).pdf: $(name).tex $(biblio).bib
-	latex $(name).tex
-	bibtex $(name).aux
-	latex $(name).tex
-	latex $(name).tex
-	dvips $(name).dvi
-	ps2pdf $(name).ps
+$(standard).pdf: $(standard).tex $(biblio).bib
+	latex $(standard).tex
+	bibtex $(standard).aux
+	latex $(standard).tex
+	latex $(standard).tex
+	dvips $(standard).dvi
+	ps2pdf $(standard).ps
 
 .phony: clean
 clean:
-	rm -f $(addprefix $(name)., $(targets)) *~
+	rm -f $(addprefix $(standard)., $(targets)) *~
