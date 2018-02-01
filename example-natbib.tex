@@ -1,0 +1,33 @@
+%
+% An example of using the CSDMS references with the natbib extension to BibTeX.
+%
+
+\documentclass[11pt]{article}
+\usepackage{doc}
+\usepackage{url}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+
+\begin{document}
+
+\title{CSDMS Reference List}
+\author{Mark Piper}
+\maketitle
+
+An example of using the CSDMS reference list
+with the natbib package.
+
+\begin{itemize}
+\item \cite{tucker:2010}
+\item \cite{overeem:2015a}
+\item \citet{kettner:2008}\
+\item \citep{hutton:2008}
+\item \cite{piper:2015}
+\item \cite{blanca:2017}
+\item \citet{jupyter:2015}
+\item \citep{gdal:2017}
+\end{itemize}
+
+\bibliography{references}
+
+\end{document}
