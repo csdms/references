@@ -1,0 +1,36 @@
+%
+% An example of using the CSDMS references with the natbib extension to BibTeX,
+% and the AGU bibliography style.
+%
+
+\documentclass[11pt]{article}
+\usepackage{doc}
+\usepackage{url}
+\usepackage{natbib}
+
+
+\begin{document}
+
+\title{CSDMS Reference List}
+\author{Mark Piper}
+\maketitle
+
+An example of using the CSDMS reference list
+with the natbib package
+and the AGU bibliography style.
+
+\begin{itemize}
+\item \citep{tucker2010modeling}
+\item \citet{overeem2015strategies}
+\item \citep{kettner2008hydrotrend}
+\item \citet{hutton2008sedflux}
+\item \citep{piper2015wmt}
+\item \citet{blanca2017compute}
+\item \citep{jupyter2015notebook}
+\item \citet{gdal2017gdal}
+\end{itemize}
+
+\bibliographystyle{agu08}
+\bibliography{references}
+
+\end{document}
