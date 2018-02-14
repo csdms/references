@@ -1,0 +1,42 @@
+%
+% An example of using the CSDMS references with natbib and multibib.
+%
+
+\documentclass[11pt]{article}
+\usepackage{doc}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{multibib}
+\newcites{rfp}{Results from Prior}
+
+
+\begin{document}
+
+\title{CSDMS Reference List}
+\author{Mark Piper}
+\maketitle
+
+An example of using the CSDMS reference list
+with natbib and multibib.
+
+\begin{itemize}
+\item \citep{tucker2010modeling}
+\item \citet{overeem2015strategies}
+\item \citep{kettner2008hydrotrend}
+\item \citet{hutton2008sedflux}
+\item \cite{piper2015wmt}
+\item \cite{blanca2017compute}
+\item \cite{jupyter2015notebook}
+\item \cite{gdal2017gdal}
+\item \citetrfp{rogers2013farming}
+\item \citeprfp{piper2016python}
+\item \citetrfp{adams2013modeling}
+\end{itemize}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\bibliographystylerfp{agu08}
+\bibliographyrfp{csdms_20_references}
+
+\end{document}
