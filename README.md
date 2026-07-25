@@ -2,20 +2,22 @@
 
 BibTeX bibliographies of CSDMS-related references,
 with examples of their use.
+The bibfile **references.bib** contains the omnibus list of references
+used in CSDMS proposals.
 
-* **references.bib** contains the list of references used in the CSDMS
-  3 proposal
-* **csdms_20_references.bib** contains references of work resulting from the
-  CSDMS 2 grant
-
-Build the examples with `latexmk`.
+Build the examples with `make` (which runs `latexmk`).
 For example,
-
-    $ latexmk example-natbib.tex -pdf
-
-builds the natbib example,
+```sh
+make natbib
+```
+builds the "natbib" example,
 producing **example-natbib.pdf**.
+View the PDF with
+```sh
+make show example=natbib
+```
 
 Clean up the example with
-
-    $ latexmk -C
+```sh
+make clean
+```
