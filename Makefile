@@ -1,4 +1,4 @@
-# Makefile to generate bibliography examples.
+# Makefile to generate bibliography examples using latexmk.
 #
 # Use:
 # 	$ make  # agu is default target
@@ -11,7 +11,7 @@ agu multibib natbib standard:
 all: agu multibib natbib standard
 
 show:
-	open example-${example}.pdf
+	latexmk -pv -pdf example-${example}.pdf
 
 clean:
 	latexmk -c
